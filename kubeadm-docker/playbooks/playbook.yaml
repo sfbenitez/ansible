@@ -1,0 +1,19 @@
+---
+- hosts: dockers
+  roles:
+    - docker
+
+#- hosts: all
+#  roles:
+#    - docker
+#    - k8s
+#
+# - hosts: masters
+#   roles:
+#     - docker
+#     - k8s
+#
+# - hosts: clusternodes
+#   roles:
+#     - docker
+#     - k8s

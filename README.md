@@ -1,7 +1,6 @@
 # ansible playbook for install docker and kubeadm
 
 ## Set vars
----
 File [playbooks/group_vars/all](kubeadm-docker/playbooks/group_vars/all)
 
 ```
@@ -15,8 +14,10 @@ master_bind_node_ip: 10.0.0.8
 ## Set your nodes
 File [nodes](kubeadm-docker/nodes)
 
+## Run playbook
+ansible-playbook playbooks/site.yml
 
-## Install docker only
+### Install docker only
 ---
 Set the dockers group with your respectives servers.
 
